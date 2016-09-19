@@ -40,10 +40,12 @@ public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenc
     private static final String KEY_ADVANCED_REBOOT = "advanced_reboot";
     private static final String KEY_POWERMENU_TORCH = "powermenu_torch";
     private static final String POWER_MENU_ANIMATIONS = "power_menu_animations";
+    private static final String TRANSPARENT_POWER_MENU = "transparent_power_menu";
 
     private ListPreference mAdvancedReboot;
     private SwitchPreference mPowermenuTorch;
     private ListPreference mPowerMenuAnimations;
+    private ListPreference mPowerMenuTransparency;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -74,6 +76,12 @@ public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenc
                 getContentResolver(), Settings.System.POWER_MENU_ANIMATIONS, 0)));
         mPowerMenuAnimations.setSummary(mPowerMenuAnimations.getEntry());
         mPowerMenuAnimations.setOnPreferenceChangeListener(this);
+
+        mPowerMenuTransparency = (ListPreference) findPreference(TRANSPARENT_POWER_MENU);
+        mPowerMenuTransparency.setValue(String.valueOf(Settings.System.getInt(
+                getContentResolver(), Settings.System.TRANSPARENT_POWER_MENU, 0)));
+        mPowerMenuTransparency.setSummary(mPowerMenuTransparency.getEntry());
+        mPowerMenuTransparency.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -103,6 +111,12 @@ public class PowerMenu extends SettingsPreferenceFragment implements OnPreferenc
                     Integer.valueOf((String) newValue));
             mPowerMenuAnimations.setValue(String.valueOf(newValue));
             mPowerMenuAnimations.setSummary(mPowerMenuAnimations.getEntry());
+            return true;
+        } else if (preference == mPowerMenuTransparency) {
+            Settings.System.putInt(getContentResolver(), Settings.System.TRANSPARENT_POWER_MENU,
+                    Integer.valueOf((String) newValue));
+            mPowerMenuTransparency.setValue(String.valueOf(newValue));
+            mPowerMenuTransparency.setSummary(mPowerMenuTransparency.getEntry());
             return true;
         }
         return false;

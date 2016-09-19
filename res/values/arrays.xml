@@ -59,4 +59,23 @@
         <item>10</item>
     </string-array>
 
+    <!-- Power menu transparency -->
+    <string-array name="power_menu_transparency_entries">
+        <item>@string/power_menu_transparency_0</item>
+        <item>@string/power_menu_transparency_10</item>
+        <item>@string/power_menu_transparency_20</item>
+        <item>@string/power_menu_transparency_30</item>
+        <item>@string/power_menu_transparency_40</item>
+        <item>@string/power_menu_transparency_50</item>
+    </string-array>
+
+    <string-array name="power_menu_transparency_values" translatable="false">
+        <item>100</item>
+        <item>90</item>
+        <item>80</item>
+        <item>70</item>
+        <item>60</item>
+        <item>50</item>
+    </string-array>
+
 </resources>

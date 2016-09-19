@@ -63,4 +63,13 @@
     <string name="power_menu_animation_translucent_top">Translucent (top)</string>
     <string name="power_menu_animation_translucent_bottom">Translucent (bottom)</string>
 
+    <!-- Power menu transparency -->
+    <string name="power_menu_transparency_title">Power menu transparency</string>
+    <string name="power_menu_transparency_0">0</string>
+    <string name="power_menu_transparency_10">10</string>
+    <string name="power_menu_transparency_20">20</string>
+    <string name="power_menu_transparency_30">30</string>
+    <string name="power_menu_transparency_40">40</string>
+    <string name="power_menu_transparency_50">50</string>
+
 </resources>
