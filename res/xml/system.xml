@@ -27,4 +27,14 @@
             android:layout="@layout/preference_powermenu"
             android:title="@string/powermenu_category" />
 
+         <PreferenceScreen
+            android:key="superuser"
+            android:layout="@layout/preference_superuser"
+            android:title="@string/superuser_category" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="me.phh.superuser"
+                android:targetClass="com.koushikdutta.superuser.MainActivity" />
+         </PreferenceScreen>
+
 </PreferenceScreen>
