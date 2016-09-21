@@ -74,5 +74,6 @@
 
     <!-- Individual app categories -->
     <string name="superuser_category">SuperUser</string>
+    <string name="substratum_category">Substratum</string>
 
 </resources>
