@@ -21,5 +21,10 @@
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
   
+          <com.jisoo.tweaks.preference.SystemSettingSwitchPreference
+            android:key="double_tap_sleep_anywhere"
+            android:title="@string/lockscreen_dt2s_title"
+            android:defaultValue="false" />
+
 </PreferenceScreen>
 

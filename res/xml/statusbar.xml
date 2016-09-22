@@ -39,4 +39,9 @@
         android:summary="@string/status_bar_expanded_qs_settings_summary"
         android:fragment="com.jisoo.tweaks.fragments.StatusbarExpandedQSSettings" />
 
+    <com.jisoo.tweaks.preference.SystemSettingSwitchPreference
+        android:key="double_tap_sleep_gesture"
+        android:title="@string/statusbar_dt2s_title"
+        android:defaultValue="false" />
+
 </PreferenceScreen>

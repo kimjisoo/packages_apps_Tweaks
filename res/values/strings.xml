@@ -78,4 +78,9 @@
     <string name="omniswitch_first_time_title">Warning</string>
     <string name="omniswitch_first_time_message">If using OmniSwitch as recents alterative, make sure you have OmniSwitch enabled</string>
 
+
+   <!-- DT2S settings -->
+   <string name="lockscreen_dt2s_title">Double tap to sleep on lock screen</string>
+   <string name="statusbar_dt2s_title">Double tap to sleep on status bar</string>
+
 </resources>
