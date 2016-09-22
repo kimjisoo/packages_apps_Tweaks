@@ -21,4 +21,9 @@
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+          <com.jisoo.tweaks.preference.SystemSettingSwitchPreference
+            android:key="double_tap_sleep_gesture"
+            android:title="@string/statusbar_dt2s_title"
+            android:defaultValue="false" />
+
 </PreferenceScreen>
