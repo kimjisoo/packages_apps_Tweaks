@@ -105,4 +105,7 @@
     <string name="qs_set_animation_duration">%1$s</string>
     <string name="qs_set_animation_interpolator">%1$s</string>
 
+    <!-- Statusbar items (SystemUI Tuner) -->
+    <string name="statusbar_items_title">Statusbar items</string>
+
 </resources>
