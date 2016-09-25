@@ -108,4 +108,7 @@
     <!-- Statusbar items (SystemUI Tuner) -->
     <string name="statusbar_items_title">Statusbar items</string>
 
+    <!-- Nightmode (SystemUI Tuner) -->
+    <string name="nightmode_title">Nightmode</string>
+
 </resources>
