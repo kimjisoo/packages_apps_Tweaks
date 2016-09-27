@@ -144,4 +144,9 @@
     <string name="clock_date_string_edittext_title">Must be in DateFormat eg. MM/dd/yy</string>
     <string name="clock_date_string_edittext_summary">Enter string</string>
 
+    <!-- Battery light settings  -->
+    <string name="battery_light_category">Battery LED settings</string>
+    <string name="battery_light_enable">Enable battery light</string>
+    <string name="battery_low_pulse_title">Pulse if battery low</string>
+
 </resources>

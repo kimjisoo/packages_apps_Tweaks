@@ -21,5 +21,21 @@
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+   <PreferenceCategory
+        android:key="battery_light_cat"
+        android:title="@string/battery_light_category" >
+
+   <com.jisoo.tweaks.preference.SystemSettingSwitchPreference
+        android:key="battery_light_enabled"
+        android:title="@string/battery_light_enable"
+        android:persistent="false"/>
+
+   <com.jisoo.tweaks.preference.SystemSettingSwitchPreference
+        android:key="battery_light_pulse"
+        android:title="@string/battery_low_pulse_title"
+        android:dependency="battery_light_enabled"
+        android:persistent="false" />
+
+   </PreferenceCategory>
 
 </PreferenceScreen>
