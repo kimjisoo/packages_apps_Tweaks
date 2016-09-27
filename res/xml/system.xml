@@ -28,15 +28,6 @@
             android:title="@string/powermenu_category" />
 
          <PreferenceScreen
-            android:key="nightmode"
-            android:layout="@layout/preference_nightmode"
-            android:title="@string/nightmode_title" >
-            <intent android:action="android.intent.action.MAIN"
-                android:targetPackage="com.android.systemui"
-                android:targetClass="com.android.systemui.tuner.NightModeFragmentActivity" />
-         </PreferenceScreen>
-
-         <PreferenceScreen
             android:key="superuser"
             android:layout="@layout/preference_superuser"
             android:title="@string/superuser_category" >
@@ -44,16 +35,6 @@
                 android:action="android.intent.action.MAIN"
                 android:targetPackage="me.phh.superuser"
                 android:targetClass="com.koushikdutta.superuser.MainActivity" />
-         </PreferenceScreen>
-
-         <PreferenceScreen
-            android:key="substratum"
-            android:layout="@layout/preference_substratum"
-            android:title="@string/substratum_category" >
-            <intent
-                android:action="android.intent.action.MAIN"
-                android:targetPackage="projekt.substratum"
-                android:targetClass="projekt.substratum.LauncherActivity" />
          </PreferenceScreen>
 
 </PreferenceScreen>

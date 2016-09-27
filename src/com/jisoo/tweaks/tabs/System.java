@@ -42,11 +42,8 @@ public class System extends SettingsPreferenceFragment implements
 
     private static final String KEY_SUPERUSER = "superuser";
     private static final String KEY_SUPERUSER_PACKAGE_NAME = "me.phh.superuser";
-    private static final String KEY_SUBSTRATUM = "substratum";
-    private static final String KEY_SUBSTRATUM_PACKAGE_NAME = "projekt.substratum";
 
     private PreferenceScreen mSuperUser;
-    private PreferenceScreen mSubstratum;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -63,15 +60,6 @@ public class System extends SettingsPreferenceFragment implements
             }
             if (!supported) {
                 prefSet.removePreference(mSuperUser);
-            }
-
-        mSubstratum = (PreferenceScreen) findPreference(KEY_SUBSTRATUM);
-            try {
-                supported = (getPackageManager().getPackageInfo("projekt.substratum", 0).versionCode > 0);
-            } catch (PackageManager.NameNotFoundException e) {
-            }
-            if (!supported) {
-                prefSet.removePreference(mSubstratum);
             }
 
         ContentResolver resolver = getActivity().getContentResolver();

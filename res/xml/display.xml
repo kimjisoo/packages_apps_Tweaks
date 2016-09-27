@@ -21,6 +21,25 @@
     android:layout="@layout/tab"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+         <PreferenceScreen
+            android:key="substratum"
+            android:layout="@layout/preference_substratum"
+            android:title="@string/substratum_category" >
+            <intent
+                android:action="android.intent.action.MAIN"
+                android:targetPackage="projekt.substratum"
+                android:targetClass="projekt.substratum.LauncherActivity" />
+         </PreferenceScreen>
+
+         <PreferenceScreen
+            android:key="nightmode"
+            android:layout="@layout/preference_nightmode"
+            android:title="@string/nightmode_title" >
+            <intent android:action="android.intent.action.MAIN"
+                android:targetPackage="com.android.systemui"
+                android:targetClass="com.android.systemui.tuner.NightModeFragmentActivity" />
+         </PreferenceScreen>
+
    <PreferenceCategory
         android:key="battery_light_cat"
         android:title="@string/battery_light_category" >
