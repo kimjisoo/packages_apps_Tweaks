@@ -18,9 +18,10 @@
 
     <!-- Tabs -->
     <string name="system_category">System</string>
-    <string name="lockscreen_category">Lockscreen</string>
+    <string name="display_category">Display and lights</string>
     <string name="statusbar_category">Status Bar</string>
     <string name="navigation_category">Navigation</string>
+    <string name="lockscreen_category">Lockscreen</string>
     <string name="multitasking_category">Multi-Tasking</string>
 
     <!-- Dialog -->

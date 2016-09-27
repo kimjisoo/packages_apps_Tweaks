@@ -48,9 +48,10 @@ import android.view.ViewGroup;
 import android.widget.Toast;
 
 import com.jisoo.tweaks.tabs.System;
-import com.jisoo.tweaks.tabs.Lockscreen;
+import com.jisoo.tweaks.tabs.Display;
 import com.jisoo.tweaks.tabs.StatusBar;
 import com.jisoo.tweaks.tabs.Navigation;
+import com.jisoo.tweaks.tabs.Lockscreen;
 import com.jisoo.tweaks.tabs.MultiTasking;
 import com.jisoo.tweaks.PagerSlidingTabStrip;
 import com.android.settings.R;
@@ -174,10 +175,11 @@ public class Tweaks extends SettingsPreferenceFragment {
         public StatusBarAdapter(FragmentManager fm) {
             super(fm);
             frags[0] = new System();
-            frags[1] = new Lockscreen();
+            frags[1] = new Display();
             frags[2] = new StatusBar();
             frags[3] = new Navigation();
-            frags[4] = new MultiTasking();
+            frags[4] = new Lockscreen();
+            frags[5] = new MultiTasking();
         }
 
         @Override
@@ -200,9 +202,10 @@ public class Tweaks extends SettingsPreferenceFragment {
         String titleString[];
         titleString = new String[]{
                     getString(R.string.system_category),
-                    getString(R.string.lockscreen_category),
+                    getString(R.string.display_category),
                     getString(R.string.statusbar_category),
                     getString(R.string.navigation_category),
+                    getString(R.string.lockscreen_category),
                     getString(R.string.multitasking_category)};
         return titleString;
     }
