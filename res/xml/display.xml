@@ -57,4 +57,40 @@
 
    </PreferenceCategory>
 
+   <PreferenceCategory
+        android:key="blur_cat"
+        android:title="@string/blur_category" >
+
+   <com.jisoo.tweaks.preference.SystemSettingSwitchPreference
+        android:key="translucent_volume_pref"
+        android:title="@string/translucent_volume_pref"
+        android:defaultValue="false" />
+
+   <com.jisoo.tweaks.preference.SystemSettingSwitchPreference
+        android:key="translucent_header_pref"
+        android:title="@string/translucent_header_pref"
+        android:defaultValue="false" />
+
+   <com.jisoo.tweaks.preference.SystemSettingSwitchPreference
+        android:key="translucent_quick_settings_pref"
+        android:title="@string/translucent_quick_settings_pref"
+        android:defaultValue="false" />
+
+   <com.jisoo.tweaks.preference.SystemSettingSwitchPreference
+        android:key="translucent_notifications_pref"
+        android:title="@string/translucent_notifications_pref"
+        android:defaultValue="false" />
+
+   <com.jisoo.tweaks.preference.SystemSettingSwitchPreference
+        android:key="blurred_recent_app_enabled_pref"
+        android:title="@string/blurred_recent_app_enabled_pref"
+        android:persistent="false"/>
+
+   <com.jisoo.tweaks.preference.SystemSettingSwitchPreference
+        android:key="blurred_status_bar_expanded_enabled_pref"
+        android:title="@string/blurred_status_bar_expanded_enabled_pref"
+        android:defaultValue="false" />
+
+   </PreferenceCategory>
+
 </PreferenceScreen>

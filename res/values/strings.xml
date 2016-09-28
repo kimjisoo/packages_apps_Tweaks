@@ -149,4 +149,13 @@
     <string name="battery_light_enable">Enable battery light</string>
     <string name="battery_low_pulse_title">Pulse if battery low</string>
 
+    <!-- Blur & translucency -->
+    <string name="blur_category">Blur and translucency settings</string>
+    <string name="translucent_quick_settings_pref">Translucent expanded status bar</string>
+    <string name="translucent_header_pref">Translucent notification panel header</string>
+    <string name="translucent_notifications_pref">Translucent notifications</string>
+    <string name="translucent_volume_pref">Translucent volume dialog</string>
+    <string name="blurred_recent_app_enabled_pref">Blur recents background</string>
+    <string name="blurred_status_bar_expanded_enabled_pref">Blur expanded status bar</string>
+
 </resources>
