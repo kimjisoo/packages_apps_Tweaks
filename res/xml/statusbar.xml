@@ -33,4 +33,10 @@
         android:summary="@string/qs_bt_easy_toggle_summary"
         android:defaultValue="false" />
 
+    <PreferenceScreen
+        android:key="status_bar_expanded_qs_settings"
+        android:title="@string/status_bar_expanded_qs_settings"
+        android:summary="@string/status_bar_expanded_qs_settings_summary"
+        android:fragment="com.jisoo.tweaks.fragments.StatusbarExpandedQSSettings" />
+
 </PreferenceScreen>
