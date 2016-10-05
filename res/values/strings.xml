@@ -182,4 +182,10 @@
     <string name="battery_style_circle">Circle</string>
     <string name="battery_style_droid">Droid</string>
 
+    <!-- Tiles toggle settings  -->
+    <string name="qs_wifi_easy_toggle_title">WiFi toggle</string>
+    <string name="qs_wifi_easy_toggle_summary">Clicking turns WiFi on or off instead of taking you to settings</string>
+    <string name="qs_bt_easy_toggle_title">Bluetooth toggle</string>
+    <string name="qs_bt_easy_toggle_summary">Clicking turns Bluetooth on or off instead of taking you to settings</string>
+
 </resources>
