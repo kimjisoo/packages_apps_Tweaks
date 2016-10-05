@@ -29,4 +29,10 @@
     <string name="tweaks_dialog_message">There will be bugs.</string>
     <string name="tweaks_dialog_toast">READ THE WHOLE THING!</string>
 
+    <!-- Tiles toggle settings  -->
+    <string name="qs_wifi_easy_toggle_title">WiFi toggle</string>
+    <string name="qs_wifi_easy_toggle_summary">Clicking turns WiFi on or off instead of taking you to settings</string>
+    <string name="qs_bt_easy_toggle_title">Bluetooth toggle</string>
+    <string name="qs_bt_easy_toggle_summary">Clicking turns Bluetooth on or off instead of taking you to settings</string>
+
 </resources>
