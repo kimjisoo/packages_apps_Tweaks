@@ -75,6 +75,8 @@ public class StatusBar extends SettingsPreferenceFragment implements
     public static final int CLOCK_DATE_STYLE_UPPERCASE = 2;
     private static final int CUSTOM_CLOCK_DATE_FORMAT_INDEX = 18;
 
+    private static final String STATUSBAR_BATTERY_STYLE = "statusbar_battery_style";
+
     private ListPreference mTileAnimationStyle;
     private ListPreference mTileAnimationDuration;
     private ListPreference mTileAnimationInterpolator;
@@ -85,6 +87,8 @@ public class StatusBar extends SettingsPreferenceFragment implements
     private ListPreference mClockDateDisplay;
     private ListPreference mClockDateStyle;
     private ListPreference mClockDateFormat;
+
+    private ListPreference mStatusBarBattery;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -165,6 +169,14 @@ public class StatusBar extends SettingsPreferenceFragment implements
         }
 
         parseClockDateFormats();
+
+        mStatusBarBattery = (ListPreference) findPreference(STATUSBAR_BATTERY_STYLE);
+
+        int batteryStyle = Settings.System.getInt(resolver, Settings.System.STATUSBAR_BATTERY_STYLE, 0);
+        mStatusBarBattery.setValue(String.valueOf(batteryStyle));
+        mStatusBarBattery.setSummary(mStatusBarBattery.getEntry());
+        mStatusBarBattery.setOnPreferenceChangeListener(this);
+
     }
 
     @Override
@@ -305,6 +317,13 @@ public class StatusBar extends SettingsPreferenceFragment implements
                         Settings.System.STATUS_BAR_CLOCK_DATE_FORMAT, (String) objValue);
                 }
             }
+            return true;
+        } else if (preference == mStatusBarBattery) {
+            int batteryStyle = Integer.valueOf((String) objValue);
+            int index = mStatusBarBattery.findIndexOfValue((String) objValue);
+            Settings.System.putInt(
+                    resolver, Settings.System.STATUSBAR_BATTERY_STYLE, batteryStyle);
+            mStatusBarBattery.setSummary(mStatusBarBattery.getEntries()[index]);
             return true;
         }
         return false;
