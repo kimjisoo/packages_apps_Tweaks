@@ -27,4 +27,11 @@
         android:fragment="com.dirtyunicorns.dutweaks.fragments.NavbarSettings"
         android:layout="@layout/preference_navigation"
         android:title="@string/navigationbar_settings_title" />
+
+    <SwitchPreference
+        android:key="volume_rocker_music_controls"
+        android:summary="@string/volume_rocker_music_controls_summary"
+        android:title="@string/volume_rocker_music_controls_title"
+        android:defaultValue="true" />
+ 
 </PreferenceScreen>
