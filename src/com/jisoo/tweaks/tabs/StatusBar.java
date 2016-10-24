@@ -77,6 +77,11 @@ public class StatusBar extends SettingsPreferenceFragment implements
 
     private static final String STATUSBAR_BATTERY_STYLE = "statusbar_battery_style";
 
+    private static final String PREF_BATT_BAR = "battery_bar_list";
+    private static final String PREF_BATT_BAR_STYLE = "battery_bar_style";
+    private static final String PREF_BATT_BAR_WIDTH = "battery_bar_thickness";
+    private static final String PREF_BATT_ANIMATE = "battery_bar_animate";
+
     private ListPreference mTileAnimationStyle;
     private ListPreference mTileAnimationDuration;
     private ListPreference mTileAnimationInterpolator;
@@ -89,6 +94,11 @@ public class StatusBar extends SettingsPreferenceFragment implements
     private ListPreference mClockDateFormat;
 
     private ListPreference mStatusBarBattery;
+
+    private ListPreference mBatteryBar;
+    private ListPreference mBatteryBarStyle;
+    private ListPreference mBatteryBarThickness;
+    private SwitchPreference mBatteryBarChargingAnimation;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -176,6 +186,25 @@ public class StatusBar extends SettingsPreferenceFragment implements
         mStatusBarBattery.setValue(String.valueOf(batteryStyle));
         mStatusBarBattery.setSummary(mStatusBarBattery.getEntry());
         mStatusBarBattery.setOnPreferenceChangeListener(this);
+
+        mBatteryBar = (ListPreference) findPreference(PREF_BATT_BAR);
+        mBatteryBar.setOnPreferenceChangeListener(this);
+        mBatteryBar.setValue((Settings.System.getInt(resolver,
+                        Settings.System.STATUSBAR_BATTERY_BAR, 0)) + "");
+
+        mBatteryBarStyle = (ListPreference) findPreference(PREF_BATT_BAR_STYLE);
+        mBatteryBarStyle.setOnPreferenceChangeListener(this);
+        mBatteryBarStyle.setValue((Settings.System.getInt(resolver,
+                Settings.System.STATUSBAR_BATTERY_BAR_STYLE, 0)) + "");
+
+        mBatteryBarChargingAnimation = (SwitchPreference) findPreference(PREF_BATT_ANIMATE);
+        mBatteryBarChargingAnimation.setChecked(Settings.System.getInt(resolver,
+                Settings.System.STATUSBAR_BATTERY_BAR_ANIMATE, 0) == 1);
+
+        mBatteryBarThickness = (ListPreference) findPreference(PREF_BATT_BAR_WIDTH);
+        mBatteryBarThickness.setOnPreferenceChangeListener(this);
+        mBatteryBarThickness.setValue((Settings.System.getInt(resolver,
+                Settings.System.STATUSBAR_BATTERY_BAR_THICKNESS, 1)) + "");
 
     }
 
@@ -325,6 +354,18 @@ public class StatusBar extends SettingsPreferenceFragment implements
                     resolver, Settings.System.STATUSBAR_BATTERY_STYLE, batteryStyle);
             mStatusBarBattery.setSummary(mStatusBarBattery.getEntries()[index]);
             return true;
+        } else if (preference == mBatteryBar) {
+            int val = Integer.parseInt((String) objValue);
+            return Settings.System.putInt(resolver,
+                    Settings.System.STATUSBAR_BATTERY_BAR, val);
+        } else if (preference == mBatteryBarStyle) {
+            int val = Integer.parseInt((String) objValue);
+            return Settings.System.putInt(resolver,
+                    Settings.System.STATUSBAR_BATTERY_BAR_STYLE, val);
+        } else if (preference == mBatteryBarThickness) {
+            int val = Integer.parseInt((String) objValue);
+            return Settings.System.putInt(resolver,
+                    Settings.System.STATUSBAR_BATTERY_BAR_THICKNESS, val);
         }
         return false;
     }
