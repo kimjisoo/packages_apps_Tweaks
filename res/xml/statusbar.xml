@@ -131,6 +131,4 @@
             android:summary="@string/qs_expand_indicator_summary"
             android:defaultValue="false" />
   
-      </PreferenceCategory>
-
 </PreferenceScreen>
