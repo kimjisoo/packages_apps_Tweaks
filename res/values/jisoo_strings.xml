@@ -30,6 +30,7 @@
     <string name="jisoo_battery_light_settings">Battery charging light</string>
     <string name="jisoo_notification_light_settings">Notifications light</string>
     <string name="recent_settings_title">Recents Panel</string>
+    <string name="keyboard_ime_title">Keyboard and IME</string>
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
     <string name="press_color_to_apply">Press on color below to apply</string>
