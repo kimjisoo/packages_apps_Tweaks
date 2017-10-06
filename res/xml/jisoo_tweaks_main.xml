@@ -25,4 +25,11 @@
             android:layout="@layout/preference_tweaks_inputmethod"
             />
 
+        <Preference
+            android:key="jisoo_recents_settings"
+            android:fragment="com.jisoo.tweaks.RecentsSettings"
+            android:title="@string/recent_settings_title"
+            android:layout="@layout/preference_tweaks_recents"
+            />
+
 </PreferenceScreen>
