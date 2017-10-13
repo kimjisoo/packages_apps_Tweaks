@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.abc.settings;
+package com.jisoo.tweaks;
 
 import android.content.ContentResolver;
 import android.content.res.Resources;
@@ -34,13 +34,13 @@ public class VolumeRockerSettings extends SettingsPreferenceFragment implements
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.abc_volumerocker_settings);
+        addPreferencesFromResource(R.xml.jisoo_volumerocker_settings);
 
     }
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.ABC;
+        return MetricsProto.MetricsEvent.TWEAKS;
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {

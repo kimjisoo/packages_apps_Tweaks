@@ -13,7 +13,7 @@
  * See the License for the specific language governing permissions and
  * limitations under the License.
  */
-package com.abc.settings;
+package com.jisoo.tweaks;
 
 import android.content.ContentResolver;
 import android.content.res.Resources;
@@ -28,19 +28,19 @@ import com.android.internal.logging.nano.MetricsProto;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
-public class RecentSettings extends SettingsPreferenceFragment implements
+public class OtherSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener {
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        addPreferencesFromResource(R.xml.abc_recent_settings);
+        addPreferencesFromResource(R.xml.jisoo_other_settings);
 
     }
 
     @Override
     public int getMetricsCategory() {
-        return MetricsProto.MetricsEvent.ABC;
+        return MetricsProto.MetricsEvent.TWEAKS;
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
