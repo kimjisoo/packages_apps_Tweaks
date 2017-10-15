@@ -32,4 +32,11 @@
             android:layout="@layout/preference_tweaks_recents"
             />
 
+        <Preference
+            android:key="power_settings"
+            android:fragment="com.jisoo.tweaks.PowerSettings"
+            android:title="@string/power_title"
+            android:layout="@layout/preference_tweaks_power"
+            />
+
 </PreferenceScreen>
