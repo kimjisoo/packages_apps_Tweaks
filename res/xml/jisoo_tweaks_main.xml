@@ -32,4 +32,11 @@
             android:layout="@layout/preference_tweaks_recents"
             />
 
+        <Preference
+            android:key="powermenu_settings"
+            android:fragment="com.jisoo.tweaks.PowerMenuSettings"
+            android:title="@string/powermenu_title"
+            android:layout="@layout/preference_tweaks_powermenu"
+            />
+
 </PreferenceScreen>
