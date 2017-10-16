@@ -31,7 +31,7 @@
     <string name="lockscreen_settings_title">Lockscreen and Security</string>
     <string name="navigationbar_settings_title">Navigation</string>
     <string name="notification_drawer_settings_title">Notifications and QS</string>
-    <string name="statusbar_settings_title">Status bar</string>
+    <string name="statusbar_title">Status bar</string>
     <string name="jisoo_sys">Misc</string>
     <string name="power_settings_title">Power</string>
     <string name="volumerocker_settings_title">Volume and media</string>
@@ -84,4 +84,12 @@
     <string name="powermenu_soundpanel">Sound Panel</string>
     <string name="powermenu_users">Users</string>
     <string name="powermenu_torch">Flashlight</string>
+    <!-- QS rows and columns -->
+    <string name="qs_rows_columns_title">QS rows and columns</string>
+    <string name="qs_rows_portrait_title">Tiles rows on portrait</string>
+    <string name="qs_rows_landscape_title">Tiles rows on landscape</string>
+    <string name="qs_columns_portrait_title">Tiles columns on portrait</string>
+    <string name="qs_columns_landscape_title">Tiles columns on landscape</string>
+    <string name="qs_tile_title_visibility_title">Show tiles title</string>
+    <string name="qs_small_tiles_title">Small QS tiles</string>
 </resources>
