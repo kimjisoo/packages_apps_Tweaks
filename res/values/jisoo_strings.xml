@@ -28,7 +28,7 @@
     <!-- Main pref screens -->
     <string name="jisoo_tweaks_title">Additional ROM settings</string>
     <string name="jisoo_interface">Interface</string>
-    <string name="lockscreen_settings_title">Lockscreen and Security</string>
+    <string name="lockscreen_title">Lockscreen and Security</string>
     <string name="navigationbar_settings_title">Navigation</string>
     <string name="notification_drawer_settings_title">Notifications and QS</string>
     <string name="statusbar_title">Status bar</string>
@@ -92,4 +92,7 @@
     <string name="qs_columns_landscape_title">Tiles columns on landscape</string>
     <string name="qs_tile_title_visibility_title">Show tiles title</string>
     <string name="qs_small_tiles_title">Small QS tiles</string>
+    <!-- DT2S settings -->
+    <string name="lockscreen_dt2s_title">Double tap to sleep on lock screen</string>
+    <string name="statusbar_dt2s_title">Double tap to sleep on status bar</string>
 </resources>
