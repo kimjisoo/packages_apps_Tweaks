@@ -22,4 +22,10 @@
             android:title="@string/lockscreen_dt2s_title"
             android:defaultValue="false" />
 
+          <com.jisoo.tweaks.preferences.SystemSettingSwitchPreference
+            android:key="lockscreen_battery_info"
+            android:title="@string/lockscreen_battery_info_title"
+            android:summary="@string/lockscreen_battery_info_summary"
+            android:defaultValue="true" />
+
 </PreferenceScreen>
