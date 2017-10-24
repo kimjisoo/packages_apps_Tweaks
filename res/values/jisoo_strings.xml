@@ -29,7 +29,7 @@
     <string name="jisoo_tweaks_title">Additional ROM settings</string>
     <string name="jisoo_interface">Interface</string>
     <string name="lockscreen_title">Lockscreen and Security</string>
-    <string name="navigationbar_settings_title">Navigation</string>
+    <string name="navbar_title">Navigation</string>
     <string name="notification_drawer_settings_title">Notifications and QS</string>
     <string name="statusbar_title">Status bar</string>
     <string name="jisoo_sys">Misc</string>
@@ -107,4 +107,7 @@
     <string name="qs_multiuser_switch_summary">Disable the multi-user switch in the header</string>
     <string name="qs_expand_indicator_title">Expand Indicator</string>
     <string name="qs_expand_indicator_summary">Disable the expand indicator in the header</string>
+    <!-- Navbar Animation -->
+    <string name="pixel_navbar_anim_title">Pixel navbar animation</string>
+    <string name="pixel_navbar_anim_summary">Requires a config change(display size, navbar position, reboot) themes may overwrite</string>
 </resources>
