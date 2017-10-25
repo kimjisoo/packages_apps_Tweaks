@@ -110,4 +110,6 @@
     <!-- Navbar Animation -->
     <string name="pixel_navbar_anim_title">Pixel navbar animation</string>
     <string name="pixel_navbar_anim_summary">Requires a config change(display size, navbar position, reboot) themes may overwrite</string>
+    <!-- Longpress on back to sleep  -->
+    <string name="sleep_longpress_back_title">Longpress on back to sleep</string>
 </resources>

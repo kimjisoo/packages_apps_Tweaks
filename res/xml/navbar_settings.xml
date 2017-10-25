@@ -23,4 +23,9 @@
         android:summary="@string/pixel_navbar_anim_summary"
         android:defaultValue="true" />
 
+    <com.jisoo.tweaks.preferences.SecureSettingSwitchPreference
+        android:key="sleep_longpress_back"
+        android:title="@string/sleep_longpress_back_title"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
