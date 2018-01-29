@@ -29,4 +29,9 @@
         android:title="@string/statusbar_dt2s_title"
         android:defaultValue="false" />
 
+    <com.jisoo.tweaks.preferences.SecureSettingSwitchPreference
+        android:key="sleep_longpress_back"
+        android:title="@string/sleep_longpress_back_title"
+        android:defaultValue="true" />
+
 </PreferenceScreen>
