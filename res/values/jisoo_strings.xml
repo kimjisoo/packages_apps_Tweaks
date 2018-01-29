@@ -81,4 +81,9 @@
     <!-- Lockscreen battery info indicator  -->
     <string name="lockscreen_battery_info_title">Lockscreen charging info</string>
     <string name="lockscreen_battery_info_summary">Display max current, voltage, and battery temperature on lockscreen while charging</string>
+    <!-- SystemUI theme -->
+    <string name="systemui_theme_style_title">Tiles panel and power menu style</string>
+    <string name="systemui_theme_style_auto">Wallpaper based</string>
+    <string name="systemui_theme_style_light">Light style</string>
+    <string name="systemui_theme_style_dark">Dark style</string>
 </resources>

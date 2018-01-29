@@ -28,6 +28,7 @@ import android.content.res.Resources;
 import android.database.ContentObserver;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
 import android.provider.Settings;
 import android.view.LayoutInflater;
@@ -56,6 +57,9 @@ import java.util.List;
 public class RecentsSettings extends SettingsPreferenceFragment implements
         Preference.OnPreferenceChangeListener, DialogInterface.OnDismissListener {
 
+    private static final String SYSTEMUI_THEME_STYLE = "systemui_theme_style";
+    private ListPreference mSystemUIThemeStyle;
+
     private final static String[] sSupportedActions = new String[] {
         "org.adw.launcher.THEMES",
         "com.gau.go.launcherex.theme"
@@ -74,7 +78,14 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.jisoo_recents_settings);
-
+        ContentResolver resolver = getActivity().getContentResolver();
+        mSystemUIThemeStyle = (ListPreference) findPreference(SYSTEMUI_THEME_STYLE);
+        int systemUIThemeStyle = Settings.System.getInt(resolver,
+                Settings.System.SYSTEM_UI_THEME, 0);
+        int valueIndex = mSystemUIThemeStyle.findIndexOfValue(String.valueOf(systemUIThemeStyle));
+        mSystemUIThemeStyle.setValueIndex(valueIndex >= 0 ? valueIndex : 0);
+        mSystemUIThemeStyle.setSummary(mSystemUIThemeStyle.getEntry());
+        mSystemUIThemeStyle.setOnPreferenceChangeListener(this);
     }
 
     @Override
@@ -83,6 +94,16 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
     }
 
     public boolean onPreferenceChange(Preference preference, Object newValue) {
+        ContentResolver resolver = getActivity().getContentResolver();
+
+        if (preference == mSystemUIThemeStyle) {
+            String value = (String) newValue;
+            Settings.System.putInt(resolver,
+                    Settings.System.SYSTEM_UI_THEME, Integer.valueOf(value));
+            int valueIndex = mSystemUIThemeStyle.findIndexOfValue(value);
+            mSystemUIThemeStyle.setSummary(mSystemUIThemeStyle.getEntries()[valueIndex]);
+           return true;
+        }
         return false;
     }
 
