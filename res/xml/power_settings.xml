@@ -19,4 +19,14 @@
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings"
     android:title="@string/power_title" >
 
+   <com.jisoo.tweaks.preferences.SystemSettingSwitchPreference
+        android:key="double_tap_sleep_anywhere"
+        android:title="@string/lockscreen_dt2s_title"
+        android:defaultValue="false" />
+
+    <com.jisoo.tweaks.preferences.SystemSettingSwitchPreference
+        android:key="double_tap_sleep_gesture"
+        android:title="@string/statusbar_dt2s_title"
+        android:defaultValue="false" />
+
 </PreferenceScreen>

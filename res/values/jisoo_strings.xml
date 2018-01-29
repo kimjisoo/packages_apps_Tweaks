@@ -73,4 +73,8 @@
     <string name="no_iconpacks_summary">No icon packs installed</string>
     <string name="dialog_pick_iconpack_title">Pick icon pack</string>
     <string name="default_iconpack_title">Default icons</string>
+    <!-- DT2S settings -->
+    <string name="lockscreen_dt2s_title">Double tap to sleep on lock screen</string>
+    <string name="statusbar_dt2s_title">Double tap to sleep on status bar</string>
+
 </resources>
