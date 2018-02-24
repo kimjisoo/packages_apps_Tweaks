@@ -54,4 +54,12 @@
         android:entryValues="@array/volume_key_cursor_control_values"
         android:key="volume_key_cursor_control"
         android:title="@string/volume_key_cursor_control_title" />
+
+    <PreferenceScreen
+        android:key="pa_pie_control"
+        android:title="@string/pa_pie_control_title"
+        android:summary="@string/pa_pie_control_summary"
+        android:fragment="com.jisoo.tweaks.fragments.PieSettings"
+        android:icon="@drawable/ic_pie_icon" />
+
 </PreferenceScreen>
