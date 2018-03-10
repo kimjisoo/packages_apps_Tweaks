@@ -25,6 +25,10 @@
     <string name="reset_message">Reset all entries to default?</string>
     <string name="attention">Attention</string>
     <string name="reset">Reset</string>
+    <string name="profile_applist_title">Applications</string>
+    <string name="picker_activities">Activities</string>
+    <string name="select_custom_app_title">Select custom app</string>
+    <string name="select_custom_activity_title">Select custom activity</string>
     <!-- Main pref screens -->
     <string name="jisoo_tweaks_title">Additional ROM settings</string>
     <string name="jisoo_interface">Interface</string>
@@ -122,4 +126,49 @@
     <string name="pa_pie_gravity_bottom">Bottom</string>
     <string name="pa_pie_gravity_right">Right</string>
     <string name="pa_pie_gravity_left">Left</string>
+    <!-- Slim Recents panel -->
+    <string name="slim_recents_title">Slim recents</string>
+    <string name="use_slim_recents_title">Use alternative recents panel</string>
+    <string name="use_slim_recents_summary">Use Slim Recents instead of the default recents view</string>
+    <string name="slim_recents_settings_title">Slim recents settings</string>
+    <string name="slim_recents_settings_summary">View the settings for Slim Recents</string>
+    <string name="recents_max_apps_title">Max allowed apps</string>
+    <string name="recent_panel_scale_title">Size</string>
+    <string name="recent_panel_expanded_mode_title">Previews expanded mode</string>
+    <string name="recent_panel_expanded_mode_summary">Recent tasks expanded preview mode</string>
+    <string name="recent_panel_expanded_mode_auto">Auto (default)</string>
+    <string name="recent_panel_expanded_mode_always">All previews</string>
+    <string name="recent_panel_expanded_mode_never">Disabled</string>
+    <string name="recent_panel_bg_color_title">Panel background color</string>
+    <string name="recent_card_bg_color_title">Card background color</string>
+    <string name="recent_reset_title">Reset to stock color</string>
+    <string name="recent_reset_confirm">Are you sure you want to reset Slim Recent to stock color?</string>
+    <string name="default_auto_string">Default (app based)</string>
+    <string name="slim_icon_pack_title">Icon Pack</string>
+    <string name="slim_icon_pack_summary">Apply a custom icon pack for apps in the panel</string>
+    <string name="slim_recents_corner_radius_title">Use round corners for cards</string>
+    <string name="recent_panel_lefty_mode_title">Show on the left edge</string>
+    <string name="recent_panel_lefty_mode_summary">Show recent apps panel on the left edge</string>
+    <string name="profile_choose_app">Choose app</string>
+    <string name="dialog_delete_title">Delete</string>
+    <string name="dialog_delete_message">Remove selected item?</string>
+    <string name="slim_blacklist_apps_cat_title">Blacklist</string>
+    <string name="slim_blacklist_apps_title">Apps blacklist</string>
+    <string name="slim_blacklist_apps_summary">Apps to not show in the panel</string>
+    <string name="slim_blacklist_add_apps_title">Add app</string>
+    <string name="slim_blacklist_add_apps_summary">Tap here to add, tap on added app to remove it</string>
+    <!-- Slim Recent App Sidebar  -->
+    <string name="recent_app_sidebar_title">Recents app sidebar</string>
+    <string name="use_recent_app_sidebar_title">Enable app sidebar</string>
+    <string name="use_recent_app_sidebar_summary">Show app shortcuts on the other edge</string>
+    <string name="recent_app_sidebar_content_title">App sidebar content</string>
+    <string name="recent_app_sidebar_content_summary">Configure the content of the app sidebar</string>
+    <string name="recent_app_sidebar_style_title">Sidebar style</string>
+    <string name="recent_app_sidebar_style_summary">Change recent app sidebar style</string>
+    <string name="recent_app_sidebar_hide_labels_title">Hide icon labels</string>
+    <string name="recent_app_sidebar_label_color_title">Label color</string>
+    <string name="recent_app_sidebar_bg_color_title">Background color</string>
+    <string name="recent_app_sidebar_scale_title">Size</string>
+    <string name="recent_app_sidebar_open_simultaneously_title">Open simultaneously with recents</string>
+    <string name="recent_app_sidebar_open_simultaneously_summary">Reduce recents opening lag by disabling this</string>
 </resources>

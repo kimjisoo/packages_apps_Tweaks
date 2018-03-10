@@ -28,8 +28,10 @@ import android.content.res.Resources;
 import android.database.ContentObserver;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
+import android.os.UserHandle;
 import android.support.v7.preference.ListPreference;
 import android.support.v7.preference.Preference;
+import android.support.v14.preference.SwitchPreference;
 import android.provider.Settings;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -73,6 +75,7 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
 
     private AlertDialog mDialog;
     private ListView mListView;
+    private SwitchPreference mSlimToggle;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
@@ -103,6 +106,12 @@ public class RecentsSettings extends SettingsPreferenceFragment implements
             int valueIndex = mSystemUIThemeStyle.findIndexOfValue(value);
             mSystemUIThemeStyle.setSummary(mSystemUIThemeStyle.getEntries()[valueIndex]);
            return true;
+       } else if (preference == mSlimToggle) {
+            boolean value = (Boolean) newValue;
+            Settings.System.putIntForUser(resolver,
+                    Settings.System.USE_SLIM_RECENTS, value ? 1 : 0,
+                    UserHandle.USER_CURRENT);
+            return true;
         }
         return false;
     }

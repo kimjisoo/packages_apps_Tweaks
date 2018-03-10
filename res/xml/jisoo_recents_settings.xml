@@ -28,4 +28,25 @@
         android:persistent="false"
         android:entries="@array/systemui_theme_style_entries"
         android:entryValues="@array/systemui_theme_style_values" />
+
+    <PreferenceCategory
+        android:key="slim_recents"
+        android:title="@string/slim_recents_title">
+
+    <com.jisoo.tweaks.preferences.SystemSettingSwitchPreference
+        android:key="use_slim_recents"
+        android:title="@string/use_slim_recents_title"
+        android:summary="@string/use_slim_recents_summary"
+        android:defaultValue="false" />
+
+    <Preference
+        android:key="slim_recents_panel"
+        android:fragment="com.jisoo.tweaks.fragments.SlimRecentsPanel"
+        android:title="@string/slim_recents_settings_title"
+        android:summary="@string/slim_recents_settings_summary"
+        android:dependency="use_slim_recents"
+        android:persistent="false" />
+
+    </PreferenceCategory>
+
 </PreferenceScreen>

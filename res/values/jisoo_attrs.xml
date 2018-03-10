@@ -27,22 +27,22 @@
         <attr name="defaultColorValue" format="integer" />
     </declare-styleable>
 
-    <!-- Auto keyboard rotation -->
-    <string-array name="keyboard_rotation_timeout_entries" translatable="false">
-        <item>2s</item>
-        <item>5s</item>
-        <item>10s</item>
-        <item>20s</item>
-        <item>30s</item>
-        <item>60s</item>
-    </string-array>
+    <!-- Base attributes available to CustomSeekBarPreference. -->
+    <declare-styleable name="SeekBarPreference">
+       <attr name="interval" format="integer" />
+        <attr name="minimum" format="integer" />
+        <attr name="unitsLeft" format="string|reference" />
+        <attr name="unitsRight" format="string|reference" />
+        <attr name="defaultVal" format="integer" />
+        <attr name="maximum" format="integer" />
+        <attr name="units" format="string|reference" />
+    </declare-styleable>
 
-    <string-array name="keyboard_rotation_timeout_values" translatable="false">
-        <item>2000</item>
-        <item>5000</item>
-        <item>10000</item>
-        <item>20000</item>
-        <item>30000</item>
-        <item>60000</item>
-    </string-array>
+    <declare-styleable name="IntervalSeekBar">
+        <attr name="minI" format="float" />
+        <attr name="maxI" format="float" />
+        <attr name="defaultValuePure" format="float" />
+        <attr name="digits" format="integer" />
+    </declare-styleable>
+
 </resources>
